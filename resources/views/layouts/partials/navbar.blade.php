@@ -30,12 +30,22 @@
             <i class="material-symbols-rounded">account_circle</i>
           </a>
           <ul class="dropdown-menu dropdown-menu-end p-2" aria-labelledby="profileDropdown">
+          <li class="mb-2">
+            <a class="dropdown-item border-radius-md" href="javascript:;">
+                <div class="d-flex align-items-center py-1">
+                <span class="material-symbols-rounded">person</span>
+                <div class="ms-2">
+                    <h6 class="text-sm font-weight-normal my-auto">Profile</h6>
+                </div>
+                </div>
+            </a>
+            </li>
             <li class="mb-2">
               <a class="dropdown-item border-radius-md" href="javascript:;">
                 <div class="d-flex align-items-center py-1">
                   <span class="material-symbols-rounded">settings</span>
                   <div class="ms-2">
-                    <h6 class="text-sm font-weight-normal my-auto">Account Settings</h6>
+                    <h6 class="text-sm font-weight-normal my-auto">Settings</h6>
                   </div>
                 </div>
               </a>
