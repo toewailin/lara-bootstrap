@@ -14,7 +14,6 @@
         <!-- Nucleo Icons -->
         <link href="{{ asset('assets/css/nucleo-icons.css') }}" rel="stylesheet" />
         <link href="{{ asset('assets/css/nucleo-svg.css') }}" rel="stylesheet" />
-        <!-- Font Awesome Icons -->
         <!-- Font Awesome CDN -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
@@ -27,6 +26,7 @@
     <body class="g-sidenav-show  bg-gray-100">
         @include('layouts.partials.sidebar')
         <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+            @include('layouts.partials.navbar')
             @yield('content')
         </main>
         @include('layouts.partials.footer')
