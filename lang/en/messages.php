@@ -8,4 +8,6 @@ return [
     'logout' => 'Logout',
     'language' => 'Language',
     'search_here' => 'Search Here',
+    'pages' => 'Pages',
+    'analytics' => 'Analytics',
 ];

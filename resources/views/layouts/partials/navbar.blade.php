@@ -12,8 +12,8 @@
     </div>
     <nav aria-label="breadcrumb" class="ps-2">
       <ol class="breadcrumb bg-transparent mb-0 p-0">
-        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-        <li class="breadcrumb-item text-sm text-dark active font-weight-bold" aria-current="page">Analytics</li>
+        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">{{ __('messages.pages') }}</a></li>
+        <li class="breadcrumb-item text-sm text-dark active font-weight-bold" aria-current="page">{{ __('messages.analytics') }}</li>
       </ol>
     </nav>
     <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
