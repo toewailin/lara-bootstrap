@@ -2,17 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\App;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
 class LanguageController extends Controller
 {
-    public function changeLanguage($lang)
+    public function switch($locale)
     {
-        if (in_array($lang, ['en', 'my', 'ko'])) {
-            App::setLocale($lang);
-            session()->put('locale', $lang);
+        // Check if the locale exists
+        $locales = ['en', 'my', 'kr'];
+        if (in_array($locale, $locales)) {
+            // Set the locale and store it in session
+            session(['locale' => $locale]);
+            app()->setLocale($locale);
         }
+
+        // Redirect back to the previous page or home
         return redirect()->back();
     }
 }

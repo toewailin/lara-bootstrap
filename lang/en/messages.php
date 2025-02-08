@@ -7,4 +7,5 @@ return [
     'settings' => 'Settings',
     'logout' => 'Logout',
     'language' => 'Language',
+    'search_here' => 'Search Here',
 ];

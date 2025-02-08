@@ -7,4 +7,5 @@ return [
     'settings' => 'ဆက်တင်များ',
     'logout' => 'ထွက်ရန်',
     'language' => 'ဘာသာစကား',
+    'search_here' => 'ဤနေရာတွင် ရှာပါ',
 ];

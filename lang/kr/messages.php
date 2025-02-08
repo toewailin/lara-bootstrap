@@ -7,4 +7,5 @@ return [
     'settings' => '설정',
     'logout' => '로그아웃',
     'language' => '언어',
+    'search_here' => '여기에서 검색',
 ];

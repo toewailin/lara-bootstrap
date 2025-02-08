@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
       <div class="ms-md-auto pe-md-3 d-flex align-items-center">
         <div class="input-group input-group-outline">
-          <label class="form-label">Search here</label>
+          <label class="form-label">{{ __('messages.search_here') }}</label>
           <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
         </div>
       </div>
@@ -28,12 +28,15 @@
         <li class="nav-item dropdown">
           <a href="javascript:;" class="nav-link py-0 px-1 position-relative line-height-0" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="material-symbols-rounded">language</i>
+            <!-- Dynamic flag icon -->
+            <!-- <img src="{{ asset('assets/img/icons/flags/' . App::getLocale() . '.png') }}" alt="{{ App::getLocale() }}" class="me-2" width="20" height="14"> -->
+            <!-- <span>{{ strtoupper(App::getLocale()) }}</span> -->
           </a>
           <ul class="dropdown-menu dropdown-menu-end p-2" aria-labelledby="languageDropdown">
             <li>
-              <a class="dropdown-item border-radius-md" href="{{ route('changeLanguage', 'en') }}">
+              <a class="dropdown-item border-radius-md" href="{{ route('language.switch', 'en') }}">
                 <div class="d-flex align-items-center py-1">
-                <img src="{{ asset('assets/img/icons/flags/US.png') }}" alt="English" class="me-2" width="20" height="14"> <!-- USA Flag for English -->
+                <img src="{{ asset('assets/img/icons/flags/en.png') }}" alt="English" class="me-2" width="20" height="14"> <!-- USA Flag for English -->
                   <div class="ms-2">
                     <h6 class="text-sm font-weight-normal my-auto">English</h6>
                   </div>
@@ -41,9 +44,9 @@
               </a>
             </li>
             <li>
-              <a class="dropdown-item border-radius-md" href="{{ route('changeLanguage', 'my') }}">
+              <a class="dropdown-item border-radius-md" href="{{ route('language.switch', 'my') }}">
                 <div class="d-flex align-items-center py-1">
-                  <img src="{{ asset('assets/img/icons/flags/MR.png') }}" alt="English" class="me-2" width="20" height="14"> <!-- Myanmar Flag -->
+                  <img src="{{ asset('assets/img/icons/flags/my.png') }}" alt="English" class="me-2" width="20" height="14"> <!-- Myanmar Flag -->
                   <div class="ms-2">
                     <h6 class="text-sm font-weight-normal my-auto">မြန်မာ</h6>
                   </div>
@@ -51,9 +54,9 @@
               </a>
             </li>
             <li>
-              <a class="dropdown-item border-radius-md" href="{{ route('changeLanguage', 'ko') }}">
+              <a class="dropdown-item border-radius-md" href="{{ route('language.switch', 'kr') }}">
                 <div class="d-flex align-items-center py-1">
-                  <img src="{{ asset('assets/img/icons/flags/KR.png') }}" alt="English" class="me-2" width="20" height="14"> <!-- South Korea Flag -->
+                  <img src="{{ asset('assets/img/icons/flags/kr.png') }}" alt="English" class="me-2" width="20" height="14"> <!-- South Korea Flag -->
                   <div class="ms-2">
                     <h6 class="text-sm font-weight-normal my-auto">한국어</h6>
                   </div>
