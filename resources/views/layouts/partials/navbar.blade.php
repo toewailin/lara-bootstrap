@@ -24,6 +24,46 @@
         </div>
       </div>
       <ul class="navbar-nav  justify-content-end">
+        <!-- Language Dropdown -->
+        <li class="nav-item dropdown">
+          <a href="javascript:;" class="nav-link py-0 px-1 position-relative line-height-0" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="material-symbols-rounded">language</i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end p-2" aria-labelledby="languageDropdown">
+            <li>
+              <a class="dropdown-item border-radius-md" href="{{ route('changeLanguage', 'en') }}">
+                <div class="d-flex align-items-center py-1">
+                <img src="{{ asset('assets/img/icons/flags/US.png') }}" alt="English" class="me-2" width="20" height="14"> <!-- USA Flag for English -->
+                  <div class="ms-2">
+                    <h6 class="text-sm font-weight-normal my-auto">English</h6>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item border-radius-md" href="{{ route('changeLanguage', 'my') }}">
+                <div class="d-flex align-items-center py-1">
+                  <img src="{{ asset('assets/img/icons/flags/MR.png') }}" alt="English" class="me-2" width="20" height="14"> <!-- Myanmar Flag -->
+                  <div class="ms-2">
+                    <h6 class="text-sm font-weight-normal my-auto">မြန်မာ</h6>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item border-radius-md" href="{{ route('changeLanguage', 'ko') }}">
+                <div class="d-flex align-items-center py-1">
+                  <img src="{{ asset('assets/img/icons/flags/KR.png') }}" alt="English" class="me-2" width="20" height="14"> <!-- South Korea Flag -->
+                  <div class="ms-2">
+                    <h6 class="text-sm font-weight-normal my-auto">한국어</h6>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+
         <!-- Profile Dropdown -->
         <li class="nav-item dropdown">
           <a href="javascript:;" class="nav-link py-0 px-1 position-relative line-height-0" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,7 +75,7 @@
                 <div class="d-flex align-items-center py-1">
                 <span class="material-symbols-rounded">person</span>
                 <div class="ms-2">
-                    <h6 class="text-sm font-weight-normal my-auto">Profile</h6>
+                    <h6 class="text-sm font-weight-normal my-auto">{{ __('messages.profile') }}</h6>
                 </div>
                 </div>
             </a>

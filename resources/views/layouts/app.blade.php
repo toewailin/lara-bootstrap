@@ -11,9 +11,11 @@
 
         <!--     Fonts and icons     -->
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" />
+        
         <!-- Nucleo Icons -->
         <link href="{{ asset('assets/css/nucleo-icons.css') }}" rel="stylesheet" />
         <link href="{{ asset('assets/css/nucleo-svg.css') }}" rel="stylesheet" />
+
         <!-- Font Awesome CDN -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
